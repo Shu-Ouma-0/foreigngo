@@ -96,7 +96,7 @@ export const LessonButton = ({
                                         : "fill-primary-foreground text-primary-foreground",
                                         isCompleted && "fill-none stroke-[4]"
                                     )}
-                                    style={{ height: '50px', width: '50px' }}
+                                    style={{ height: '40px', width: '40px' }}
                                 />
                             </Button>
                         </CircularProgressbarWithChildren>
@@ -115,7 +115,7 @@ export const LessonButton = ({
                                 : "fill-primary-foreground text-primary-foreground",
                                 isCompleted && "fill-none stroke-[4]"
                             )}
-                            style={{ height: '50px', width: '50px' }}
+                            style={{ height: '40px', width: '40px' }}
                         />
                     </Button>
                 )}
