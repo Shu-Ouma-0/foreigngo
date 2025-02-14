@@ -93,11 +93,24 @@ const main = async () => {
                 order: 1,
                 question: 'Who is "nghiaqt"?',
             },
+            {
+                id: 2,
+                lessonId: 1,
+                type: "ASSIST",
+                order: 2,
+                question: '"nghiaqt"',
+            },
+            {
+                id: 3,
+                lessonId: 1,
+                type: "SELECT",
+                order: 3,
+                question: 'Who is "botqt"?',
+            },
         ]);
 
         await db.insert(schema.challengeOptions).values([
             {
-                id: 1,
                 challengeId: 1,
                 imageSrc: "/man.svg",
                 correct: true,
@@ -105,7 +118,6 @@ const main = async () => {
                 audioSrc: "/es_man.mp3",
             },
             {
-                id: 2,
                 challengeId: 1,
                 imageSrc: "/woman.svg",
                 correct: false,
@@ -113,10 +125,54 @@ const main = async () => {
                 audioSrc: "/es_woman.mp3",
             },
             {
-                id: 3,
                 challengeId: 1,
                 imageSrc: "/robot.svg",
                 correct: false,
+                text: "botqt",
+                audioSrc: "/es_robot.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 2,
+                correct: true,
+                text: "nghiaqt",
+                audioSrc: "/es_man.mp3",
+            },
+            {
+                challengeId: 2,
+                correct: false,
+                text: "not nghiaqt",
+                audioSrc: "/es_woman.mp3",
+            },
+            {
+                challengeId: 2,
+                correct: false,
+                text: "botqt",
+                audioSrc: "/es_robot.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 3,
+                imageSrc: "/man.svg",
+                correct: false,
+                text: "nghiaqt",
+                audioSrc: "/es_man.mp3",
+            },
+            {
+                challengeId: 3,
+                imageSrc: "/woman.svg",
+                correct: false,
+                text: "not nghiaqt",
+                audioSrc: "/es_woman.mp3",
+            },
+            {
+                challengeId: 3,
+                imageSrc: "/robot.svg",
+                correct: true,
                 text: "botqt",
                 audioSrc: "/es_robot.mp3",
             },
