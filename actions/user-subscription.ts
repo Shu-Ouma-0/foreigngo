@@ -52,6 +52,7 @@ export const createStripeUrl = async () => {
         },
         success_url: returnUrl,
         cancel_url: returnUrl,
+        locale: "vi",
     });
 
     return { data: stripeSession.url };
