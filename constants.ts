@@ -1,24 +1,24 @@
-export const POINTS_TO_REFILL = 10;
+export const POINTS_TO_REFILL = 50;
 
 export const quests = [
     {
-        title: "Earn 20 XP",
+        title: "Đạt được 20 Điểm",
         value: 20,
     },
     {
-        title: "Earn 50 XP",
+        title: "Đạt được 50 Điểm",
         value: 50,
     },
     {
-        title: "Earn 100 XP",
+        title: "Đạt được 100 Điểm",
         value: 100,
     },
     {
-        title: "Earn 500 XP",
+        title: "Đạt được 500 Điểm",
         value: 500,
     },
     {
-        title: "Earn 1000 XP",
+        title: "Đạt được 1000 Điểm",
         value: 1000,
     },
 ];
