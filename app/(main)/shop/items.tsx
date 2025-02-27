@@ -96,7 +96,7 @@ export const Items = ({
                     onClick={onUpgrade}
                     disabled={pending}
                 >
-                    {hasActiveSubscription ? "settings" : "upgrade"}
+                    {hasActiveSubscription ? "more info" : "upgrade"}
                 </Button>
             </div>
         </ul>
