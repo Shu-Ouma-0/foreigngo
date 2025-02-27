@@ -13,7 +13,7 @@ export const Footer = () => {
                         width={40}
                         className="mr-4 rounded-md" 
                     />
-                    Vietnamese
+                    Tiếng Việt
                 </Button>
                 <Button size="lg" variant="ghost" className="w-full">
                     <Image 
@@ -23,7 +23,7 @@ export const Footer = () => {
                         width={40}
                         className="mr-4 rounded-md" 
                     />
-                    England
+                    Tiếng Anh
                 </Button>
                 <Button size="lg" variant="ghost" className="w-full">
                     <Image 
@@ -33,7 +33,7 @@ export const Footer = () => {
                         width={40}
                         className="mr-4 rounded-md" 
                     />
-                    Japanese
+                    Tiếng Nhật
                 </Button>
                 <Button size="lg" variant="ghost" className="w-full">
                     <Image 
@@ -43,7 +43,7 @@ export const Footer = () => {
                         width={40}
                         className="mr-4 rounded-md" 
                     />
-                    Sweden
+                    Tiếng Thụy Điển
                 </Button>
                 <Button size="lg" variant="ghost" className="w-full">
                     <Image 
@@ -53,7 +53,7 @@ export const Footer = () => {
                         width={40}
                         className="mr-4 rounded-md" 
                     />
-                    Canadian
+                    Tiếng Canada
                 </Button>
             </div>
         </footer>

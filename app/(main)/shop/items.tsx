@@ -55,7 +55,7 @@ export const Items = ({
                 />
                 <div className="flex-1">
                     <p className="text-neutral-700 text-base lg:text-xl font-bold">
-                        Refill hearts
+                        Hồi đầy Tym
                     </p>
                 </div>
                 <Button
@@ -65,7 +65,7 @@ export const Items = ({
                     {hearts === 5
                         ? "full"
                         : (
-                            <div className="flex items-center">
+                            <div className="flex items-center gap-x-1.5">
                                 <Image 
                                     src="/points.svg"
                                     alt="Points"
@@ -89,14 +89,14 @@ export const Items = ({
                 />
                 <div className="flex-1">
                     <p className="text-neutral-700 text-base lg:text-xl font-bold">
-                        Unlimited hearts
+                        Vô hạn Tym
                     </p>
                 </div>
                 <Button
                     onClick={onUpgrade}
                     disabled={pending}
                 >
-                    {hasActiveSubscription ? "more info" : "upgrade"}
+                    {hasActiveSubscription ? "chi tiết" : "Nâng cấp"}
                 </Button>
             </div>
         </ul>

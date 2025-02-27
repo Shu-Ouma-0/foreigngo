@@ -53,7 +53,7 @@ import { useExitModal } from "@/store/use-exit-modal";
                             size="lg"
                             onClick={close}
                         >
-                            Keep learning
+                            Tiếp tục học
                         </Button>
                         <Button 
                             variant="dangerOutline"
@@ -64,7 +64,7 @@ import { useExitModal } from "@/store/use-exit-modal";
                                 router.push("/learn");
                             }}
                         >
-                            End session
+                            Kết thúc bài học
                         </Button>
                     </div>
                 </DialogFooter>

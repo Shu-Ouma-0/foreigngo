@@ -45,10 +45,10 @@ const  ShopPage = async () => {
                         width={90}
                     />
                     <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
-                        Shop
+                        Cửa hàng
                     </h1>
                     <p className="text-muted-foreground text-center text-lg mb-6">
-                        Spend your money on cool stuff.
+                        Nâng cấp gói hội viên để nhận những đặc quyền đặc biệt.
                     </p>
                     <Items 
                         hearts={userProgress.hearts}

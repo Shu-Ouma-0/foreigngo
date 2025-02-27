@@ -203,7 +203,7 @@ export const Quiz = ({
     }
 
     const title = challenge.type === "ASSIST"
-        ? "Select the correct meaning"
+        ? "Chọn đáp án đúng"
         : challenge.question;
 
     return (
