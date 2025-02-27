@@ -39,10 +39,10 @@ import { useExitModal } from "@/store/use-exit-modal";
                         />
                     </div>
                     <DialogTitle className="text-center font-bold text-2xl">
-                        Wait, don't go!
+                        Đợi đã, đừng đi!
                     </DialogTitle>
                     <DialogDescription className="text-center text-base">
-                        You're about to leave the lesson. Are you sure?
+                        Bạn sẽ rời khỏi bài học, bạn chắc chứ?
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="mb-4">

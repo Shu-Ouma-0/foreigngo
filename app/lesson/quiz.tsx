@@ -180,7 +180,7 @@ export const Quiz = ({
                         width={50}
                     />
                     <h1 className="text-xl lg:text-3xl font-bold text-neutral-700">
-                        Great job! <br /> You've completed the lesson.
+                        Tuyệt! <br /> Bạn đã hoàn thành bài học.
                     </h1>
                     <div className="flex items-center gap-x-4 w-full">
                         <ResultCard 
