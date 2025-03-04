@@ -16,7 +16,7 @@ type Props = {
 export const Sidebar = ({ className }: Props) => {
     return (
         <div className={cn(
-            "flex h-full lg:w-[256px] lg:fixed left-o top-0 px-4 border-r-2 flex-col",
+            "flex h-full lg:w-[256px] lg:fixed left-0 top-0 px-4 border-r-2 flex-col",
             className,
         )}>
             <Link href="/learn">
@@ -54,7 +54,12 @@ export const Sidebar = ({ className }: Props) => {
                     <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
                 </ClerkLoading>
                 <ClerkLoaded>
-                    <UserButton afterSignOutUrl="/" />
+                    <UserButton
+                        appearance={{
+                            elements: { userButtonPopoverCard: { pointerEvents: "initial" } },
+                          }}
+                        afterSignOutUrl="/" 
+                    />
                 </ClerkLoaded>
             </div>
         </div>
