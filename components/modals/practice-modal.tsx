@@ -26,7 +26,7 @@ import { usePracticeModal } from "@/store/use-practice-modal";
 
     return (
         <Dialog open={isOpen} onOpenChange={close}>
-            <DialogContent className="max-w-md">
+            <DialogContent className="max-w-md bg-gradient-to-b from-pink-300 via-rose-200 to-pink-100 rounded-lg">
                 <DialogHeader>
                     <div className="flex items-center w-full justify-center mb-5">
                         <Image 
@@ -39,7 +39,7 @@ import { usePracticeModal } from "@/store/use-practice-modal";
                     <DialogTitle className="text-center font-bold text-2xl">
                         Ôn tập
                     </DialogTitle>
-                    <DialogDescription className="text-center text-base">
+                    <DialogDescription className="text-center text-base text-red-900">
                         Thực hành với chương trình ôn tập để nhận lại Tym và Điểm. Bạn sẽ không bị trừ Tym hoặc Điểm ở trong chương trình ôn tập.
                     </DialogDescription>
                 </DialogHeader>

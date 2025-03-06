@@ -23,18 +23,18 @@ export const Footer = ({
     return (
         <footer className={cn(
             "lg:h-[140px] h-[100px] border-t-2",
-            status === "correct" && "border-transparent bg-green-100",
-            status === "wrong" && "border-transparent bg-rose-100",
+            status === "correct" && "border-transparent bg-green-200",
+            status === "wrong" && "border-transparent bg-rose-200",
         )}>
             <div className="max-w-[1140px] h-full mx-auto flex items-center justify-between px-6 lg:px-10">
                 {status === "correct" && (
-                    <div className="text-green-500 font-bold text-base lg:text-2xl flex items-center">
+                    <div className="text-green-600 font-bold text-base lg:text-2xl flex items-center">
                         <CheckCircle className="h-6 w-6 lg:h-10 lg:w-10 mr-4" />
                         Tốt lắm!
                     </div>
                 )}
                 {status === "wrong" && (
-                    <div className="text-rose-500 font-bold text-base lg:text-2xl flex items-center">
+                    <div className="text-rose-600 font-bold text-base lg:text-2xl flex items-center">
                         <XCircle className="h-6 w-6 lg:h-10 lg:w-10 mr-4" />
                         Hãy thử lại!
                     </div>

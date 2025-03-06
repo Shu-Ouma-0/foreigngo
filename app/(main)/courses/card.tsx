@@ -41,7 +41,7 @@ export const Card = ({
                 width={93.33}
                 className="rounded-lg drop-shadow-md border object-cover"
             />
-            <p className="text-neutral-700 text-center font-bold mt-3">
+            <p className="text-pink-100 text-center font-bold px-1 bg-rose-900 rounded-md shadow-md mt-3">
                 {title}
             </p>
         </div>

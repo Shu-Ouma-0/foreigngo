@@ -12,13 +12,13 @@ export const Quests = ({ points }: Props) => {
     return (
         <div className="border-2 rounded-xl p-4 space-y-4"> 
             <div className="flex items-center justify-between w-full space-y-2">
-                <h3 className="font-bold text-lg">
+                <h3 className="font-bold text-lg text-white">
                     Thử thách
                 </h3>
                 <Link href="/quests">
                     <Button
                         size="sm"
-                        variant="primaryOutline"
+                        variant="primaryOutline2"
                     >
                         Xem tất cả
                     </Button>
@@ -40,7 +40,7 @@ export const Quests = ({ points }: Props) => {
                                 height={40}
                             />
                             <div className="flex flex-col gap-y-2 w-full">
-                                <p className="text-neutral-700 text-sm font-bold">
+                                <p className="text-white text-sm font-bold">
                                     {quest.title}
                                 </p>
                                 <Progress value={progress} className="h-2" />

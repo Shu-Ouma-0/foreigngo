@@ -44,10 +44,10 @@ export const Card = ({
         <div
             onClick={handleClick}
             className={cn(
-                "h-full border-2 rounded-xl border-b-4 hover:bg-black/5 p-4 lg:p-6 cursor-pointer active:border-b-2",
+                "h-full border-2 border-red-800 rounded-xl border-b-4 hover:bg-black/5 p-4 lg:p-6 cursor-pointer active:border-b-2",
                 selected && "border-sky-300 bg-sky-100 hover:bg-sky-100",
-                selected && status === "correct" && "border-green-300 bg-green-100 hover:bg-green-100",
-                selected && status === "wrong" && "border-rose-300 bg-rose-100 hover:bg-rose-100",
+                selected && status === "correct" && "border-green-500 bg-green-200 hover:bg-green-100",
+                selected && status === "wrong" && "border-red-500 bg-rose-300 hover:bg-rose-100",
                 disabled && "pointer-events-none hover:bg-white",
                 type === "ASSIST" && "lg:p-3 w-full"
             )}
@@ -66,18 +66,18 @@ export const Card = ({
             )}>
                 {type === "ASSIST" && <div />}
                 <p className={cn(
-                    "text-neutral-600 text-sm lg:text-base",
+                    "text-red-900 text-sm lg:text-base",
                     selected && "text-sky-500",
-                    selected && status === "correct" && "text-green-500",
-                    selected && status === "wrong" && "text-rose-500",
+                    selected && status === "correct" && "text-green-600 font-bold",
+                    selected && status === "wrong" && "text-rose-600 font-bold",
                 )}>
                     {text}
                 </p>
                 <div className={cn(
-                    "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 flex items-center justify-center rounded-lg text-neutral-400 lg:text-[15px] text-xs font-semibold",
+                    "lg:w-[30px] lg:h-[30px] w-[20px] h-[20px] border-2 border-red-700 flex items-center justify-center rounded-lg text-red-800 lg:text-[15px] text-xs font-semibold",
                     selected && "border-sky-300 text-sky-500",
-                    selected && status === "correct" && "border-green-500 text-green-500",
-                    selected && status === "wrong" && "border-rose-500 text-rose-500",
+                    selected && status === "correct" && "border-green-600 text-green-600",
+                    selected && status === "wrong" && "border-rose-600 text-rose-600",
                 )}>
                     {shortcut}
                 </div>

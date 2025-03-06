@@ -28,7 +28,7 @@ import { useExitModal } from "@/store/use-exit-modal";
 
     return (
         <Dialog open={isOpen} onOpenChange={close}>
-            <DialogContent className="max-w-md">
+            <DialogContent className="max-w-md bg-gradient-to-b from-red-400 via-rose-200 to-pink-100 rounded-lg">
                 <DialogHeader>
                     <div className="flex items-center w-full justify-center mb-5">
                         <Image 
@@ -41,7 +41,7 @@ import { useExitModal } from "@/store/use-exit-modal";
                     <DialogTitle className="text-center font-bold text-2xl">
                         Đợi đã, đừng đi!
                     </DialogTitle>
-                    <DialogDescription className="text-center text-base">
+                    <DialogDescription className="text-center text-base text-pink-700">
                         Bạn sẽ rời khỏi bài học, bạn chắc chứ?
                     </DialogDescription>
                 </DialogHeader>

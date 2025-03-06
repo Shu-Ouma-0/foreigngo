@@ -44,10 +44,10 @@ const  ShopPage = async () => {
                         height={90}
                         width={90}
                     />
-                    <h1 className="text-center font-bold text-neutral-800 text-2xl my-6">
+                    <h1 className="text-center font-bold text-red-900 text-2xl my-6">
                         Cửa hàng
                     </h1>
-                    <p className="text-muted-foreground text-center text-lg mb-6">
+                    <p className="text-red-950 text-center text-lg mb-6">
                         Nâng cấp gói hội viên để nhận những đặc quyền đặc biệt.
                     </p>
                     <Items 

@@ -223,7 +223,7 @@ export const Quiz = ({
                         </h1>
                         <div>
                             {challenge.type === "ASSIST" && (
-                                <QuestionBubble question={challenge.question} />
+                                <QuestionBubble question={challenge.question} className="text-white font-bold" />
                             )}
                             <Challenge 
                                 options={options}

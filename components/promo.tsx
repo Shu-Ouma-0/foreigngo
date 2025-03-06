@@ -13,11 +13,11 @@ export const Promo = () => {
                         height={26}
                         width={26}
                     />
-                    <h3 className="font-bold text-lg">
+                    <h3 className="font-bold text-lg text-white">
                         Nâng cấp lên Pro
                     </h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-white">
                     Nhận vô hạn Tym và nhiều hơn nữa!
                 </p>
             </div>

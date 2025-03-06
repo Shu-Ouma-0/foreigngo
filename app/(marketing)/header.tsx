@@ -20,7 +20,7 @@ export const Header = () => {
                     </h1>
                 </div>
                 <ClerkLoading>
-                    <Loader className="h-5 w-5 text-muted-foreground animate-spin" />
+                    <Loader className="h-5 w-5 text-red-900 animate-spin" />
                 </ClerkLoading>
                 <ClerkLoaded>
                     <SignedIn>
@@ -34,7 +34,7 @@ export const Header = () => {
                             afterSignInUrl="/learn"
                             afterSignUpUrl="/learn"
                         >
-                            <Button size="lg" variant="ghost">
+                            <Button size="lg" variant="ghost2">
                                 Đăng nhập
                             </Button>
                         </SignInButton>
