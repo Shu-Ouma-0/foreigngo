@@ -24,7 +24,7 @@ import { useHeartsModal } from "@/store/use-hearts-modal";
 
     const onClick = () => {
         close();
-        router.push("/store");
+        router.push("/shop");
     };
 
     if (!isClient) {
@@ -33,7 +33,7 @@ import { useHeartsModal } from "@/store/use-hearts-modal";
 
     return (
         <Dialog open={isOpen} onOpenChange={close}>
-            <DialogContent className="max-w-md">
+            <DialogContent className="max-w-md bg-gradient-to-b from-red-800 via-rose-500 to-rose-300 rounded-lg">
                 <DialogHeader>
                     <div className="flex items-center w-full justify-center mb-5">
                         <Image 
@@ -46,7 +46,7 @@ import { useHeartsModal } from "@/store/use-hearts-modal";
                     <DialogTitle className="text-center font-bold text-2xl">
                         Bạn hết Tym rồi!
                     </DialogTitle>
-                    <DialogDescription className="text-center text-base">
+                    <DialogDescription className="text-center text-base text-white">
                         Đăng ký gói Pro để có lượng Tym vô hạn, hoặc mua chúng ở trong cửa hàng.
                     </DialogDescription>
                 </DialogHeader>
